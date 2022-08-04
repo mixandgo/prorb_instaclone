@@ -8,4 +8,8 @@ class User < ApplicationRecord
   has_many :likes
 
   validates :username, presence: true
+
+  def like!(post)
+    likes << Like.new(post: post)
+  end
 end
