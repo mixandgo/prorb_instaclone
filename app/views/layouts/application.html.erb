@@ -13,7 +13,7 @@
   <body>
     <div class="nav">
       <%= turbo_frame_tag "post-form" do %>
-        <%= link_to "New post", posts_new_path %>
+        <%= link_to "New post", new_post_path %>
       <% end %>
 
       <% if user_signed_in? %>
